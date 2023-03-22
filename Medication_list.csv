@@ -35,9 +35,9 @@ Caltrate;Caltrate;Not Interested
 Cell-cept;Cell-cept;Not Interested
 Citalopram;Citalopram;Not Interested
 Copaxone;Copaxone;DMD
-Copaxone [40];Copaxone[40];DMD
+Copaxone [40];Copaxone;DMD
 Cyclophosphamide;Cyclophosphamide;Not Interested
-CyclophosphamideLongit;Cyclophosphamide;Not Interested
+Cyclophosphamide_doba;Cyclophosphamide;Not Interested
 Cytarabin;Cytarabin;Not Interested
 Daclizumab;Daclizumab;Not Interested
 Dexamethasone;Dexamethasone;Not Interested
@@ -59,17 +59,17 @@ IVIG;IVIG;IVIG
 Kiovig;Kiovig;IVIG
 Laquinimod;Laquinimod;Not Interested
 Lemtrada;Lemtrada;DMD
-LemtradaLongit;LemtradaLongit;Not Interested
+Lemtrada_doba;Lemtrada;Not Interested
 Mabthera;Mabthera;DMD
 Mavenclad;Mavenclad;DMD
-MavencladLongit;MavencladLongit;Not Interested
+Mavenclad_doba;Mavenclad;Not Interested
 Mayzent;Mayzent;DMD
 Methotrexat;Methotrexate;Not Interested
 Methotrexate;Methotrexate;Not Interested
 Methylprednisolone;Methylprednisolone;Not Interested
 Novantrone;Mitoxantron;DMD
 Ocrevus;Ocrevus;DMD
-OcrevusLongit;OcrevusLongit;Not Interested
+Ocrevus_doba;Ocrevus;Not Interested
 Octagam;Octagam;IVIG
 Ondansetron;Ondansetron;Not Interested
 Placebo;Placebo;Not Interested
@@ -81,7 +81,7 @@ Prednisone;Prednison;Not Interested
 Primidone;Primidone;Not Interested
 Rebif [22];Rebif[22];DMD
 Rebif [44];Rebif[44];DMD
-RituximabLongit;RituximabLongit;Not Interested
+Rituximab_doba;Rituximab;Not Interested
 Rixathon;generika Mabthery;DMD
 RoActemra;RoActemra;DMD
 Solumedrol 1000 mg;Solumedrol;Not Interested
@@ -94,3 +94,40 @@ Tysabri;Tysabri;DMD
 Tysabri_infuze;Tysabri;DMD
 Uplizna;Uplizna;DMD
 Vitamin D;Vitamin D;Not Interested
+Lagevrio;Legevrio;Not Interested
+Evusheld;Evusheld;Not Interested
+Fingolimod Glenmark;generika Gilenya;DMD
+_vac19_AstraZeneca (ChAdOx1-SARS-CoV-2);_vac19_AstraZeneca (ChAdOx1-SARS-CoV-2);vac
+_vac19_Moderna (mRNA-1273);_vac19_Moderna (mRNA-1273);vac
+_vac19_Janssen-Cilag/Johnson&Johnson (Ad26.COV2.S);_vac19_Janssen-Cilag/Johnson&Johnson (Ad26.COV2.S);vac
+Tysabri_injekce;Tysabri;DMD
+Tysabri s.c.;Tysabri;DMD
+REGN-CoV2;REGN-CoV2;Not Interested
+Ponvory;generika Gilenya;DMD
+Veklury;Veklury;Not Interested
+Mavenclad*;Mavenclad;DMD
+Kesimpta;Kesimpta;DMD
+Convalescent plasma (CP);Convalescent plasma (CP);Not Interested
+Privigen;Privigen;Not Interested
+_Solu-Medrol 750 mg;Solumedrol;Not Interested
+Plegridy i.m.;Plegridy;DMD
+Bamlanivimab/etesevimab;Bamlanivimab/etesevimab;Not Interested
+Bamlanivimab;Bamlanivimab;Not Interested
+_Plasmapheresis 3x;Plasmapheresis;Not Interested
+DNA vakc\xedna - studie;DNA vakc\xedna - studie;Not Interested
+Plegridy s.c.;Plegridy;DMD
+_vac19_Gamaleya/SputnikV (Gam-Covid-Vac);_vac19_Gamaleya/SputnikV (Gam-Covid-Vac);vac
+Regkirona;Regkirona;Not Interested
+_Plasmapheresis 6x;Plasmapheresis;Not Interested
+Paxlovid;Paxlovid;Not Interested
+_Plasmapheresis 2x;Plasmapheresis;Not Interested
+_vac19_jine;_vac19_jine;vac
+RoActemra*;RoActemra;DMD
+_IVIG 150 g;IVIG;IVIG
+_IVIG 10 g;IVIG;IVIG
+Enspryng;Enspryng;DMD
+_IVIG 125 g;IVIG;IVIG
+DepoMedrol Intrathek\xe1ln\xed;DepoMedrol Intrathek\xe1ln\xed;Not Interested
+
+
+
