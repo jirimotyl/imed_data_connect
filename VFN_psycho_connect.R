@@ -40,8 +40,7 @@ library(lubridate)
       Treatments <- as.data.table(read.delim(paste0("data/", iMed_prefix,"TR.txt"), header = TRUE))
       Relapses <- as.data.table(read.delim(paste0("data/", iMed_prefix,"RE.txt"), header = TRUE))
       Identification <- as.data.table(read.delim(paste0("data/", iMed_prefix,"ID.txt"), header = TRUE))
-      
-  # Medication list
+      # Medication list
       Medication <- as.data.table(read.csv2(med_file, fileEncoding="UTF-8-BOM"))
       
   # Promazani dat z iMedu a ponechani pouze pacientu s psychologickym vysetrenim
@@ -72,6 +71,86 @@ library(lubridate)
         "\\1.\\2", 
         Visits$EDSS
       ))
+  # Funkční subskóry jako numerická hodnota  
+      #Pyramidal
+      # Visits$Score.Pyramidal <-  as.numeric(sub(",", ".", Visits$Score.Pyramidal, fixed = TRUE))
+      Visits$Score.Pyramidal <- as.numeric(gsub(
+        # ONLY for strings containing numerics, comma, numerics
+        "^([0-6]+),([0-6]+)$", 
+        # Substitute by the first part, dot, second part
+        "\\1.\\2", 
+        Visits$Score.Pyramidal
+      ))
+      
+      #Cerebellar
+      # Visits$Score.Cerebellar <-  as.numeric(sub(",", ".", Visits$Score.Cerebellar, fixed = TRUE))
+      Visits$Score.Cerebellar <- as.numeric(gsub(
+        # ONLY for strings containing numerics, comma, numerics
+        "^([0-5]+),([0-5]+)$", 
+        # Substitute by the first part, dot, second part
+        "\\1.\\2", 
+        Visits$Score.Cerebellar
+      ))
+      
+      #BrainStem
+      # Visits$Score.BrainStem <-  as.numeric(sub(",", ".", Visits$Score.BrainStem, fixed = TRUE))
+      Visits$Score.BrainStem <- as.numeric(gsub(
+        # ONLY for strings containing numerics, comma, numerics
+        "^([0-5]+),([0-5]+)$", 
+        # Substitute by the first part, dot, second part
+        "\\1.\\2", 
+        Visits$Score.BrainStem
+      ))
+      
+      #Sensory
+      # Visits$Score.Sensory <-  as.numeric(sub(",", ".", Visits$Score.Sensory, fixed = TRUE))
+      Visits$Score.Sensory <- as.numeric(gsub(
+        # ONLY for strings containing numerics, comma, numerics
+        "^([0-6]+),([0-6]+)$", 
+        # Substitute by the first part, dot, second part
+        "\\1.\\2", 
+        Visits$Score.Sensory
+      ))
+      
+      #Bowel.Bladder
+      # Visits$Score.Bowel.Bladder <-  as.numeric(sub(",", ".", Visits$Score.Bowel.Bladder, fixed = TRUE))
+      Visits$Score.Bowel.Bladder <- as.numeric(gsub(
+        # ONLY for strings containing numerics, comma, numerics
+        "^([0-6]+),([0-6]+)$", 
+        # Substitute by the first part, dot, second part
+        "\\1.\\2", 
+        Visits$Score.Bowel.Bladder
+      ))
+      
+      #Visual
+      # Visits$Score.Visual <-  as.numeric(sub(",", ".", Visits$Score.Visual, fixed = TRUE))
+      Visits$Score.Visual <- as.numeric(gsub(
+        # ONLY for strings containing numerics, comma, numerics
+        "^([0-6]+),([0-6]+)$", 
+        # Substitute by the first part, dot, second part
+        "\\1.\\2", 
+        Visits$Score.Visual
+      ))
+      
+      #Mental
+      # Visits$Score.Mental <-  as.numeric(sub(",", ".", Visits$Score.Mental, fixed = TRUE))
+      Visits$Score.Mental <- as.numeric(gsub(
+        # ONLY for strings containing numerics, comma, numerics
+        "^([0-5]+),([0-5]+)$", 
+        # Substitute by the first part, dot, second part
+        "\\1.\\2", 
+        Visits$Score.Mental
+      ))
+      
+      #Ambulation
+      # Visits$Score.Ambulation <-  as.numeric(sub(",", ".", Visits$Score.Ambulation, fixed = TRUE))
+      Visits$Score.Ambulation <- as.numeric(gsub(
+        # ONLY for strings containing numerics, comma, numerics
+        "^([0-12]+),([0-12]+)$", 
+        # Substitute by the first part, dot, second part
+        "\\1.\\2", 
+        Visits$Score.Ambulation
+      ))
       
   # Propojeni DMD lecby do kontinualniho formatu
     
@@ -81,7 +160,15 @@ library(lubridate)
     # ---- 4A) EDSS ----
       psych_visits$EDSS_closest <- as.numeric(NA)
       psych_visits$EDSS_days <- as.numeric(NA)
-      
+      psych_visits$FS_Pyramidal <- as.numeric(NA)
+      psych_visits$FS_Cerebellar <- as.numeric(NA)
+      psych_visits$FS_BrainStem <- as.numeric(NA)
+      psych_visits$FS_Sensory <- as.numeric(NA)
+      psych_visits$FS_Bowel <- as.numeric(NA)
+      psych_visits$FS_Visual <- as.numeric(NA)
+      psych_visits$FS_Mental <- as.numeric(NA)
+      psych_visits$FS_Ambulation <- as.numeric(NA)
+            
       pb = txtProgressBar(min = 1, max = nrow(psych_visits), initial = 1, style=3) 
       for (i in 1:nrow(psych_visits)) {
         setTxtProgressBar(pb,i)
@@ -97,7 +184,15 @@ library(lubridate)
           if (nrow(tmp_Visits)>0) {
             psych_visits[i]$EDSS_closest <- tmp_Visits[1]$EDSS
             psych_visits[i]$EDSS_days <- tmp_Visits[1]$tmp_time_dist
-          }
+            psych_visits[i]$FS_Pyramidal <- tmp_Visits[1]$Score.Pyramidal
+            psych_visits[i]$FS_Cerebellar <- tmp_Visits[1]$Score.Cerebellar
+            psych_visits[i]$FS_BrainStem <- tmp_Visits[1]$Score.BrainStem
+            psych_visits[i]$FS_Sensory <- tmp_Visits[1]$Score.Sensory
+            psych_visits[i]$FS_Bowel<- tmp_Visits[1]$Score.Bowel.Bladder
+            psych_visits[i]$FS_Visual <- tmp_Visits[1]$Score.Visual
+            psych_visits[i]$FS_Mental <- tmp_Visits[1]$Score.Mental
+            psych_visits[i]$FS_Ambulation <- tmp_Visits[1]$Score.Ambulation
+            }
         }
       }
 
@@ -213,4 +308,7 @@ library(lubridate)
       rm(pb, tmp_Visits, tmp_patient_ID, tmp_psycho_date)
       
   write.csv(psych_visits, file = paste0(neuropsych_data_file, "_filled.csv"))      
-      
+  
+  library(haven)
+  write_sav(psych_visits, path = "spss_data_file.sav", compress = c("byte", "none", "zsav"), adjust_tz = TRUE)
+  

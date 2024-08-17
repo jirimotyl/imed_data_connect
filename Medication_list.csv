@@ -27,7 +27,9 @@ _vac19_BioNTech/Pfizer (BNT-162b2);_vac19_BioNTech/Pfizer (BNT-162b2);vac
 4-aminopyridine;4-aminopyridine;Not Interested
 Alexan;Alexan;Not Interested
 ASCT;AHSCT;Not Interested
+Aubagio_;Aubagio;DMD
 Aubagio;Aubagio;DMD
+Teriflunomide Mylan_;generika Aubagio;DMD
 Avonex;Avonex;DMD
 Baclofen;Baclofen;Not Interested
 Betaferon;Betaferon;DMD
@@ -58,17 +60,23 @@ ITA Depomedrol 80 mg + Cytosar 50 mg i.t.;ITA Depomedrol 80 mg + Cytosar 50 mg i
 IVIG;IVIG;IVIG
 Kiovig;Kiovig;IVIG
 Laquinimod;Laquinimod;Not Interested
+Lemtrada_;Lemtrada;DMD
 Lemtrada;Lemtrada;DMD
 Lemtrada_doba;Lemtrada;Not Interested
+Mabthera_;Mabthera;DMD
 Mabthera;Mabthera;DMD
 Mavenclad;Mavenclad;DMD
+Mavenclad*_;Mavenclad;DMD
 Mavenclad_doba;Mavenclad;Not Interested
+Mayzent_;Mayzent;DMD
 Mayzent;Mayzent;DMD
 Methotrexat;Methotrexate;Not Interested
+Methotrexat_;Methotrexate;Not Interested
 Methotrexate;Methotrexate;Not Interested
 Methylprednisolone;Methylprednisolone;Not Interested
 Novantrone;Mitoxantron;DMD
 Ocrevus;Ocrevus;DMD
+Ocrevus_;Ocrevus;DMD
 Ocrevus_doba;Ocrevus;Not Interested
 Octagam;Octagam;IVIG
 Ondansetron;Ondansetron;Not Interested
@@ -87,6 +95,8 @@ RoActemra;RoActemra;DMD
 Solumedrol 1000 mg;Solumedrol;Not Interested
 Solumedrol 500 mg;Solumedrol;Not Interested
 Study treatment;Study treatment;Study treatment
+Tecfidera_;Tecfidera;DMD
+Dimethyl Fumarate Glenmark_;generika Tecfidery;DMD
 Tecfidera;Tecfidera;DMD
 Trazodon;Trazodon;Not Interested
 Truxima;generika Mabthery;DMD
@@ -103,9 +113,11 @@ _vac19_Janssen-Cilag/Johnson&Johnson (Ad26.COV2.S);_vac19_Janssen-Cilag/Johnson&
 Tysabri_injekce;Tysabri;DMD
 Tysabri s.c.;Tysabri;DMD
 REGN-CoV2;REGN-CoV2;Not Interested
-Ponvory;generika Gilenya;DMD
+Ponvory_;Ponvory;DMD
+Ponvory;Ponvory;DMD
 Veklury;Veklury;Not Interested
 Mavenclad*;Mavenclad;DMD
+Kesimpta_;Kesimpta;DMD
 Kesimpta;Kesimpta;DMD
 Convalescent plasma (CP);Convalescent plasma (CP);Not Interested
 Privigen;Privigen;Not Interested
@@ -124,10 +136,20 @@ _Plasmapheresis 2x;Plasmapheresis;Not Interested
 _vac19_jine;_vac19_jine;vac
 RoActemra*;RoActemra;DMD
 _IVIG 150 g;IVIG;IVIG
+_IVIG 80 g;IVIG;IVIG
 _IVIG 10 g;IVIG;IVIG
 Enspryng;Enspryng;DMD
-_IVIG 125 g;IVIG;IVIG
+_IVIG 125 g;IVIG;IVIG,
 DepoMedrol Intrathek\xe1ln\xed;DepoMedrol Intrathek\xe1ln\xed;Not Interested
-
-
-
+Zeposia_;Zeposia;DMD
+Vaccine - Adacel (proti záškrtu, tetanu a černému kašli);Vaccine - Adacel (proti záškrtu, tetanu a černému kašli);vac
+Vaccine - Prevenar 20 (proti pneumokokovým infekcím);Vaccine - Prevenar 20 (proti pneumokokovým infekcím);vac
+Vaccine - Gardasil 9 (proti lidským papilomavirům - HPV);Vaccine - Gardasil 9 (proti lidským papilomavirům - HPV);vac
+Vaccine - Bexsero (proti meningokokům skupiny B);Vaccine - Bexsero (proti meningokokům skupiny B);vac
+Covid Vaccine - BioNTech/Pfizer (BNT162b2);Covid Vaccine - BioNTech/Pfizer (BNT162b2);vac
+Vaccine - Nimenrix (proti meningokokům skupiny A,C,W135 a Y);Vaccine - Nimenrix (proti meningokokům skupiny A,C,W135 a Y);vac
+DepoMedrol Intrathekální;DepoMedrol Intrathekální;Not Interested
+Satralizumab;Satralizumab;DMD
+RoActemra_;RoActemra_;Not Interested
+Ultomiris;Ravulizumab;DMD
+Ravulizumab_doba;Ravulizumab;Not Interested
